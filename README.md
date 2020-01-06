@@ -24,106 +24,39 @@ Some elements don't require content or a closing tag. We call these "empty eleme
 ```
  <img src="http://www.my.image.com" alt="My Cool image">
 ```
-## Hello World Demo
-
-## GIT
-
-Git Immersion (put this on the board and walk through examples daily as time permits)
-http://gitimmersion.com/
-
-### Lab 1
-
-* $ git config --list (to see git config settings)
-* $ git config --global user.name "Your Name"
-* $ git config --global user.email "your_email@whatever.com"
-* $ git config --global core.autocrlf input
-* $ git config --global core.safecrlf true
-* $ git config --list (to see git config settings)
-* $ ruby --version
-
-* Carriage return line feed (CRLF)
-* https://stackoverflow.com/questions/3206843/how-line-ending-conversions-work-with-git-core-autocrlf-between-different-operat
-
-### Lab 3
-
-* $ git init
-* $ git add .
-* $ git commit -m "initial commit"
-
-### Lab 4
-
-* $ git status
-
-### Lab 5
-
-* Make a change to the program
-* $ git status
-
-### Lab 6
-
-* $ git add .
-* $ git status
-
-### Lab 7
-
-* you have the ability to fine tune what goes into each commit
-
-### Lab 8
-
-* if you omit the -m flag from the command line, git will pop you into the editor of your choice
-* $ git config --global core.editor "atom --wait"
-* $ git commit
-* $ git status
-
-### Lab 10
-
-* $ git log (view the history of the project)
-* git log --pretty=oneline
-* There are a lot of options for selecting which entries are displayed in the log (see Lab 10 for examples)
-
-### Lab 11
-
-* $ cd ~
-* $ ls -al
-* $ atom .gitconfig
-* add common aliases (see Lab 11 for text)
-* $ git hist
-
 Web browsers implement what's called the Document Object Model as the basis for interpreting content (HTML, XML, SVG).
 
-The DOM is the interface we use to target elements and for watch for events.
-
-https://www.w3schools.com/js/js_htmldom.asp
+The [DOM](https://www.w3schools.com/js/js_htmldom.asp) is the interface we use to target elements and for watch for events.
 
 Review some common elements
 
- * p
- * img
- * a
- * h1 ... h6
- * span
- * pre
- * blockquote
- * ul and ol
+* p
+* img
+* a
+* h1 ... h6
+* span
+* pre
+* blockquote
+* ul and ol
 
 Review semantic elements (HTML5) (We refer to these new elements as "semantic" because they use plain English to communicate their purpose)
 
- * header
- * nav
- * main
- * article
- * section
- * aside
- * footer
+* header
+* nav
+* main
+* article
+* section
+* aside
+* footer
 
-Structural Semantics: The Importance Of HTML5 Sectioning Elements
-https://www.smashingmagazine.com/2013/01/the-importance-of-sections/
+[Structural Semantics: The Importance Of HTML5 Sectioning Elements](https://www.smashingmagazine.com/2013/01/the-importance-of-sections/)
 
 HTML elements often need data beyond their content. To supply this data, we can use "key-value" pairs inside the opening tag of the element. These pairs are referred to as attributes.
-
+```
 <a href="http://www.carolinacodeschool.org">Carolina Code School's Homepage</a>
 
 <img src="red-panda.jpeg" alt="Adorable red panda cub laying in grass.">
+```
 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
 
@@ -134,21 +67,17 @@ https://www.w3.org/standards/techs/css#w3c_all
 
 In web development, a polyfill is code that implements a feature on web browsers that do not support the feature.
 
-Can I Use?
-https://caniuse.com/
+[Can I Use?](https://caniuse.com/)
 
 Browsers also apply what's referred to as a default style sheet that declares how elements should look when custom styles are not specified.
 
-It's commonplace to include a stylesheet called a "CSS reset"
-http://html5doctor.com/html-5-reset-stylesheet/
+It's commonplace to include a stylesheet called a [CSS reset](http://html5doctor.com/html-5-reset-stylesheet/)
 
-A modern, HTML5-ready alternative to CSS resets
-https://necolas.github.io/normalize.css/
+A modern, HTML5-ready alternative to CSS resets is [Normalize.css](https://necolas.github.io/normalize.css/)
 
 A CSS rule is the actionable unit that CSS is written in and contains at least one selector (which specifies what the styles should be applied to) and one declaration (a statement made up of a property to target and a value to set that property to).
 
-CSS Reference
-https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+[CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 
 Using CSS
 
@@ -172,27 +101,23 @@ Syntax is added to the head of your HTML document. -->
 ```
 
 Troubleshooting CSS
- * semicolons at the end of all declarations
- * browsers aren't consistent; just because something renders one way on your laptop doesn't mean it's going to look like that for everyone; use a CSS reset or normalize to make sure that most defaults will be consistent across browsers
- * Remember that CSS assigns priority to selectors, called specificity. If a rule isn't being applied correctly, ensure that it's not being overwritten.
+* semicolons at the end of all declarations
+* browsers aren't consistent; just because something renders one way on your laptop doesn't mean it's going to look like that for everyone; use a CSS reset or normalize to make sure that most defaults will be consistent across browsers
+* Remember that CSS assigns priority to selectors, called specificity. If a rule isn't being applied correctly, ensure that it's not being overwritten.
 
 Selector Types
-   * Descendent combinators: #navigation li
-   * Child combinators: #container > p
-   * Adjacent sibling combinators: #container + li
-     * will select only the specified element that immediately follows the former specified element
-   * General sibling combinators: p ~ img
-    * will apply styles to any img elements following a p element
-   * Attribute combinators: input[type=text]
-   * Pseudo-class combinators (specific states elements can exist in): a:visited
-     * https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
-   * Pseudo-element combinators (lets you style specific part of the selected element): li::before
-     * https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
-     * https://css-tricks.com/pseudo-element-roundup/
-
-## Hello World Demo Cont.
-
-Uploaded to GitHub
+* Descendent combinators: #navigation li
+* Child combinators: #container > p
+* Adjacent sibling combinators: #container + li
+  * will select only the specified element that immediately follows the former specified element
+* General sibling combinators: p ~ img
+ * will apply styles to any img elements following a p element
+* Attribute combinators: input[type=text]
+* Pseudo-class combinators (specific states elements can exist in): a:visited
+  * https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+* Pseudo-element combinators (lets you style specific part of the selected element): li::before
+  * https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
+  * https://css-tricks.com/pseudo-element-roundup/
 
 ## THE COMMAND LINE
 
