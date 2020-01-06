@@ -142,9 +142,3 @@ https://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-f
 * CSS properties: https://www.w3.org/TR/css-2018/#properties
 * CSS properties that inherit (most popular): https://www.sitepoint.com/css-inheritance-introduction/
 * CSS handbook: https://medium.freecodecamp.org/the-css-handbook-a-handy-guide-to-css-for-developers-b56695917d11
-
-## Homework
-
-* Command Line for Beginners
-* Awesomely Ugly Website
-* What was your first day of code school like? Was it what you expected? Was it scary? Was it fun? How do you feel about it? What did you learn?
